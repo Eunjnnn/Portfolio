@@ -163,23 +163,37 @@
         <h1>My work</h1>
         <h3>Projects</h3>
         <div class="workCategories">
-          <button class="categoryBtn active">All<span class="categoryCount">3</span></button>
-          <button class="categoryBtn">Front-end<span class="categoryCount">3</span></button>
-          <button class="categoryBtn">Back-end<span class="categoryCount">3</span></button>
-          <button class="categoryBtn">Mobile<span class="categoryCount">3</span></button>
+          <button class="categoryBtn active" data-filter="*">All<span class="categoryCount">3</span></button>
+          <button class="categoryBtn " data-filter="front-end">Front-end<span class="categoryCount">3</span></button>
+          <button class="categoryBtn" data-filter="back-end">Back-end<span class="categoryCount">1</span></button>
+          <button class="categoryBtn" data-filter="mobile">Mobile<span class="categoryCount">2</span></button>
         </div>
         <div class="workProjects">
-          <a href="https://github.com/Eunjnnn" class="project" target="blank">
+          <a href="https://github.com/Eunjnnn" class="project" target="blank" data-type="back-end">
             <img class="projectsImg" src="imgs/github.png" alt="Github" />
             <div class="projectDescription">
               <h3>Github Site</h3>
               <span>Projects I've been doing</span>
             </div>
           </a>
-          <a href="https://github.com/Eunjnnn" class="project" target="blank">
+          <a href="https://github.com/Eunjnnn" class="project" target="blank" data-type="mobile">
             <img class="projectsImg" src="imgs/github.png" alt="Github" />
             <div class="projectDescription">
               <h3>Github Site</h3>
+              <span>Projects I've been doing</span>
+            </div>
+          </a>
+          <a href="https://github.com/Eunjnnn" class="project" target="blank" data-type="front-end">
+            <img  class="projectsImg" src="imgs/WHO.png" alt="Github" />
+            <div class="projectDescription">
+              <h3>Homepage</h3>
+              <span>Projects I've been doing</span>
+            </div>
+          </a>
+          <a data-front="2" href="https://github.com/Eunjnnn" class="project" target="blank" data-type="front-end">
+            <img  class="projectsImg" src="imgs/WHO.png" alt="Github" />
+            <div class="projectDescription">
+              <h3>Homepage</h3>
               <span>Projects I've been doing</span>
             </div>
           </a>
