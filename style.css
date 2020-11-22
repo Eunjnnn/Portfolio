@@ -42,7 +42,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0px;
   cursor: default;
 }
@@ -128,14 +128,13 @@ p {
   padding: 8px 12px;
   margin: 0px 4px;
   cursor: pointer;
+  color: var(--color-white);
+  border: 1px solid transparent;
   border-radius: var(--size-border-radius);
 }
 
-.navbarMenuItem.active {
-  border: 1px solid var(--color-white);
-}
-
 .navbarMenuItem:hover {
+  border: 1px solid var(--color-white);
   background-color: var(--color-dark-yellow);
 }
 
@@ -151,7 +150,7 @@ p {
 /* Home */
 
 #home {
-  background: url('imgs/home-background.png') center/cover no-repeat;
+  background: url("imgs/home-background.png") center/cover no-repeat;
   padding: 40px;
   padding-top: 120px;
   text-align: center;
@@ -325,13 +324,13 @@ p {
   padding: 8px 48px;
 }
 
-.categoryBtn.active,
+.categoryBtn.selected,
 .categoryBtn:hover {
   background-color: var(--color-yellow);
   color: var(--color-white);
 }
 
-.categoryBtn.active .categoryCount,
+.categoryBtn.selected .categoryCount,
 .categoryBtn:hover .categoryCount {
   opacity: 1;
   top: 0;
@@ -410,7 +409,7 @@ p {
 }
 
 .projectDescription h3:after {
-  content: '';
+  content: "";
   display: block;
   position: relative;
   left: 50%;
