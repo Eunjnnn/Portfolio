@@ -39,7 +39,7 @@ contactBtn.addEventListener('click', () => {
 const home = document.querySelector('.homeContainer');
 const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
-  home.style.opacity = 1 - window.scrollY / homeHeight;
+  home.style.opacity = 1.2 - window.scrollY / homeHeight;
 });
 
 // Show "arrow up" button when scrolling down
