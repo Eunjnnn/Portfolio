@@ -405,7 +405,7 @@ p {
 }
 
 .projectDescription h3 {
-  color: var(--color-white);
+  color: var(--color-dark-pink);
 }
 
 .projectDescription h3:after {
@@ -413,9 +413,9 @@ p {
   display: block;
   position: relative;
   left: 50%;
-  width: 25px;
+  width: 50px;
   height: 2px;
-  margin-left: -12px;
+  transform: translateX(-50%);
   margin-top: 8px;
   background-color: var(--color-dark-white);
 }
@@ -514,15 +514,26 @@ p {
   .navbarTogglebtn {
     display: block;
   }
+
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-yellow);
   }
+
+  #navbar.navbar--dark {
+    padding: 16px;
+  }
+
   .navbarMenu {
     flex-direction: column;
     text-align: center;
     width: 100%;
     display: none;
+  }
+
+  .navbarMenu.open {
+    display: block;
   }
 
   .aboutMajors {
