@@ -280,7 +280,7 @@ p {
 .skillsetLeft {
   flex-basis: 60%;
   background-color: var(--color-dark-grey);
-  padding: 20px 40px;
+  padding: 30px 40px;
 }
 
 .skillDescription {
@@ -292,7 +292,7 @@ p {
   margin-bottom: 32px;
 }
 
-.skillBar {
+/* .skillBar {
   width: 100%;
   height: 3px;
   background-color: var(--color-grey);
@@ -301,7 +301,7 @@ p {
 .skillValue {
   height: 3px;
   background-color: var(--color-orange);
-}
+} */
 
 .skillsetRight {
   flex-basis: 40%;
