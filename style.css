@@ -12,6 +12,7 @@
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
+  --color-pastel-grey: #b8b8b8;
   --color-blue: #73aace;
   --color-white-yellow: #fff7d1;
   --color-orange: #feb546;
@@ -58,6 +59,13 @@ ul {
 
 li {
   list-style: none;
+}
+
+.paperList li {
+  list-style: disc;
+  margin-bottom: 10px; 
+  line-height: 1.6; 
+  text-align:left;
 }
 
 button {
@@ -267,7 +275,8 @@ p {
 }
 
 .skillset {
-  display: flex;
+  /* display: flex; */
+  display: block;
   background-color: var(--color-light-grey);
   color: var(--color-light-white);
   margin: 20px 0;
@@ -277,8 +286,8 @@ p {
   color: var(--color-white);
 }
 
-.skillsetLeft {
-  flex-basis: 60%;
+.skillsetTop {
+  flex-basis: 100%;
   background-color: var(--color-dark-grey);
   padding: 30px 40px;
 }
@@ -288,33 +297,31 @@ p {
   justify-content: space-between;
 }
 
-.skill {
-  margin-bottom: 32px;
+.skillset2 {
+  display: flex; /* Flex container */
+  justify-content: space-between; /* Space between items */
+  gap: 0px; /* Add equal spacing between items */
+  background-color: var(--color-light-grey);
+  color: var(--color-light-white);
+  margin: 20px 0;
 }
 
-/* .skillBar {
-  width: 100%;
-  height: 3px;
-  background-color: var(--color-grey);
-}
-
-.skillValue {
-  height: 3px;
-  background-color: var(--color-orange);
-} */
-
-.skillsetRight {
-  flex-basis: 40%;
+.Lang,
+.tools,
+.etc {
+  flex: 1; /* Equal width for each column */
+  padding: 20px;
+  background-color: var(--color-pastel-grey); /* Default color for Lang */
 }
 
 .tools {
   background-color: var(--color-grey);
 }
 
-.tools,
 .etc {
-  padding: 20px;
+  background-color: var(--color-light-grey);
 }
+
 
 /* Work */
 
